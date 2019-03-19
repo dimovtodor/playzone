@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/my_style.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="icon" href="../images/playzone.ico">
+    <title>PlayZone</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="../images/playzone.jpg" alt="Logo" class="img-fluid rounded-circle">
+                <span id="play" class="align-middle">Play</span><span id="zone" class="align-middle">Zone</span>
+            </a>
+            <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#myNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#start" class="nav-link"><i class="fa fa-home"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#toys" class="nav-link">Toys</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="search-bar">
+                                <input
+                                        class="form-control"
+                                        id="myInput"
+                                        name="search"
+                                        placeholder="Search"
+                                        onkeyup="searchFunction()"
+                                        type="text"
+                                        value=""
+                                        autocomplete="off"
+                                >
+                            </div>
+                            <ul id="wrapper" class="list-group">
+                                <li class="list-group-item list-group-item-action">
+                                    <a href="#about" class="btn btn-block">About</a>
+                                </li>
+                                <li class="list-group-item list-group-item-action">
+                                    <a href="#about" class="btn btn-block">Kids</a>
+                                </li>
+                                <li class="list-group-item list-group-item-action">
+                                    <a href="#toys" class="btn btn-block">Toys</a>
+                                </li>
+                                <li class="list-group-item list-group-item-action">
+                                    <a href="#contact" class="btn btn-block">Contact</a>
+                                </li>
+                                <li class="list-group-item list-group-item-action">
+                                    <a href="#contact" class="btn btn-block">Email</a>
+                                </li>
+                                <li class="list-group-item list-group-item-action"> 
+                                    <a href="#contact" class="btn btn-block">Phone</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section id="start">
+        <div class="primary-overlay text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <h1 class="display-2 mt-5">Lets Play!</h1>
+                        <p class="lead">We have the best toys for you!</p>
+                        <a href="#toys" class="btn btn-outline-light btn-lg font-weight-bold mt-3 pt-3">
+                            <i class="fa fa-arrow-alt-circle-right"></i>
+                            Click here to see what we offer
+                        </a>
+                    </div>
+                    <div class="col-lg-6 text-sm-center mt-5 d-none d-lg-block">
+                        <img src="../images/poster.jpg" alt="poster" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-right" id="divBtn">
+        <a href="#start" class="btn mr-5" id="upBtn" onclick="topFunction()"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <section class="bg-white" id="about">
+        <div class="container">
+            <h1 class="text-sm-left display-2 font-weight-bold">About</h1>
+            <h2 class="text-sm-left mb-5 display-4">We are all about kids!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolores ea error eum excepturi facere hic nisi saepe sed tenetur! Asperiores autem dicta distinctio dolores id laboriosam libero minus rem tempore vel. Fuga fugit officiis quo quos repudiandae voluptates voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolores ea error eum excepturi facere hic nisi saepe sed tenetur! Asperiores autem dicta distinctio dolores id laboriosam libero minus rem tempore vel. Fuga fugit officiis quo quos repudiandae voluptates voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolores ea error eum excepturi facere hic nisi saepe sed tenetur! Asperiores autem dicta distinctio dolores id laboriosam libero minus rem tempore vel. Fuga fugit officiis quo quos repudiandae voluptates voluptatum.</p>
+            <div class="row">
+                <div class="c1 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/card1.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-smile-beam"></i> Happy Kids</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, nemo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c2 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/card2.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-hard-hat"></i> Safe Materials</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, nemo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c3 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/card3.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-mask"></i> Cool Toys</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, nemo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="toys">
+        <div class="container">
+            <h1 class="text-sm-left display-2 font-weight-bold">Toys</h1>
+            <h2 class="text-sm-left display-4 mb-5">Check out what we have!</h2>
+            <div class="row text-center">
+                <div class="col-sm-4 bg-white">
+                    <h2 class="display-4">Cars</h2>
+                    <div id="demo1" class="carousel slide" data-ride="carousel">
+                        <!-- The slideshow -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active" id="car1">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid ml-auto mr-auto" src="../images/car1.jpg" alt="Card Image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Toy Car 1</h4>
+                                        <p class="card-text">Material: metal</p>
+                                        <p class="card-text">Color: black</p>
+                                        <p class="card-text">Prize: 6$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="car2">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid ml-auto mr-auto" src="../images/car2.jpg" alt="Card Image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Toy Car 2</h4>
+                                        <p class="card-text">Material: metal</p>
+                                        <p class="card-text">Color: yellow</p>
+                                        <p class="card-text">Prize: 5$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid ml-auto mr-auto" src="../images/car3.jpg" alt="Card Image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Toy Car 3</h4>
+                                        <p class="card-text">Material: metal</p>
+                                        <p class="card-text">Color: blue</p>
+                                        <p class="card-text">Prize: 4$</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo1" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-4 bg-white">
+                    <h2 class="display-4">Dolls</h2>
+                    <div id="demo2" class="carousel slide" data-ride="carousel">
+                        <!-- The slideshow -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid ml-auto mr-auto" src="../images/doll1.jpg" alt="Card Image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Toy Doll 1</h4>
+                                        <p class="card-text">Material: plastic</p>
+                                        <p class="card-text">Clothes color: pink</p>
+                                        <p class="card-text">Prize: 4$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid ml-auto mr-auto" src="../images/doll2.jpg" alt="Card Image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Toy Doll 2</h4>
+                                        <p class="card-text">Material: plastic</p>
+                                        <p class="card-text">Clothes color: purple</p>
+                                        <p class="card-text">Prize: 5$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid ml-auto mr-auto" src="../images/doll3.jpg" alt="Card Image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Toy Doll 3</h4>
+                                        <p class="card-text">Material: plastic</p>
+                                        <p class="card-text">Clothes color: blue</p>
+                                        <p class="card-text">Prize: 4$</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo2" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-4 bg-white">
+                    <h2 class="display-4">BoardGames</h2>
+                    <div id="demo3" class="carousel slide" data-ride="carousel">
+                        <!-- The slideshow -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid ml-auto mr-auto" src="../images/board1.jpg" alt="Card Image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Scrabble</h4>
+                                        <p class="card-text">Material: cardboard/plastic</p>
+                                        <p class="card-text">Color: green</p>
+                                        <p class="card-text">Prize: 3$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid ml-auto mr-auto" src="../images/board2.jpg" alt="Card Image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Monopoly</h4>
+                                        <p class="card-text">Material: cardboard/plastic</p>
+                                        <p class="card-text">Color: white</p>
+                                        <p class="card-text">Prize: 2$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid ml-auto mr-auto" src="../images/board3.jpg" alt="Card Image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Chess</h4>
+                                        <p class="card-text">Material: wood</p>
+                                        <p class="card-text">Color: brown</p>
+                                        <p class="card-text">Prize: 6$</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo3" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white" id="contact">
+        <div class="container">
+            <h1 class="text-sm-left display-2 font-weight-bold pb-5">Contact</h1>
+            <div class="row text-center">
+                <div class="col-md-6 pb-5">
+                    <h3>Owner</h3>
+                    <img src="../images/author1.jpg" alt="author" class="img-fluid img-thumbnail pb-5">
+                    <a class="btn" href="mailto:dimovtodor96@gmail.com">
+                        <h3><i class="fas fa-envelope"></i> dimovtodor96@gmail.com</h3>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h3>Company</h3>
+                    <img src="../images/playzone.jpg" alt="author" class="img-fluid img-thumbnail pb-5">
+                    <a class="btn" href="mailto:playzone@gmail.com">
+                        <h3><i class="fas fa-envelope"></i> playzone@gmail.com</h3>
+                    </a>
+                    <h3><i class="fab fa-facebook-square"></i> facebook.com/playzone</h3>
+                    <h3><i class="fas fa-mobile-alt"></i> +389 72 123 456</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-1">
+        <div class="container text-center">
+            <h6 class="text-white"><i class="far fa-copyright"></i> Designed by: Todor Dimov 2019</h6>
+        </div>
+    </footer>
+
+    <script src="../js/my_script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
